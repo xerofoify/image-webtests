@@ -7,38 +7,3 @@
 <img id="rose"><img>
 <button id='Refresh' onclick="button()">Refresh</button>
   
-<script>
-var img = document.querySelector('#rose');
-var refreshes = 0;
-  img.load = function loaded() {
-    refreshes++;
-    if(refreshes == 0)
-    {
-      document.body.style.backgroundColor = "yellow";
-
-    };
-    if(refreshes == 1)
-    {
-      document.body.style.backgroundColor = "red";
-
-    };
-    if(refreshes == 2)
-    {
-      document.body.style.backgroundColor = "blue";
-
-    };
-  };
-
-  img.src = "rose.jpg";
-  
-  function button()
-  {
-    img.src = "rose.jpg";
-    document.body.style.backgroundColor = "red";
-  }
-
-
-  
-</script>
-</body>
-</html>
